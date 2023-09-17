@@ -15,7 +15,7 @@ print('Building...')
 try:
     ret = subprocess.run(['gcc', code_path, '-o', app_path],
                          stdout=subprocess.PIPE,
-                         stderr=subprocess.PIPE
+                         stderr=subprocess.PIPE,
                          timeout=COMPILER_TIMEOUT)
 except Exception as e:
     print('ERROR: Compilation failed.', str(e))
