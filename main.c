@@ -2,7 +2,7 @@
 
 int main(){
 
-    std::cout << "Hello world C!";
+    printf("Hello from C!");
 
     return 0;
 }
